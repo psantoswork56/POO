@@ -1,0 +1,14 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        double b = double.Parse(Console.ReadLine());
+        double c = double.Parse(Console.ReadLine());
+        double t = (b*c)/12;
+        Console.WriteLine($"{t:0.000}");
+
+    }
+
+}
