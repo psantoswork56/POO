@@ -1,0 +1,15 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string a = Console.ReadLine();
+        double b = double.Parse(Console.ReadLine());
+        double c = double.Parse(Console.ReadLine());
+        double t = b + (c*0.15);
+        Console.WriteLine($"TOTAL = R$ {t:0.00}");
+
+    }
+
+}
