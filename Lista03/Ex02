@@ -1,0 +1,17 @@
+using System;
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string[] a = Console.ReadLine().Split(' ');
+        int x = int.Parse(a[0]);
+        int y = int.Parse(a[1]);
+        int z = int.Parse(a[2]);
+        int c1 = (x+y+Math.Abs(x-y))/2;
+        int c2 = (c1+z+Math.Abs(c1-z))/2;
+        Console.WriteLine($"{c2} eh o maior");
+
+    }
+
+}
