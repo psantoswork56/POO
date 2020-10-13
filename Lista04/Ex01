@@ -1,0 +1,25 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+       string[] w = Console.ReadLine().Split(' ');
+        double pi = 3.14159;
+        double x = double.Parse(w[0]);
+        double y = double.Parse(w[1]);
+        double z = double.Parse(w[2]);
+        double a = (x*z)/2;
+        double b = pi*Math.Pow(z,2);
+        double c = ((x+y)*z)/2;
+        double d = Math.Pow(y,2);
+        double e = x*y;
+        Console.WriteLine($"TRIANGULO: {a:0.000}");
+        Console.WriteLine($"CIRCULO: {b:0.000}");
+        Console.WriteLine($"TRAPEZIO: {c:0.000}");
+        Console.WriteLine($"QUADRADO: {d:0.000}");
+        Console.WriteLine($"RETANGULO: {e:0.000}");
+        
+    }
+
+}
