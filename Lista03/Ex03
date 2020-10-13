@@ -1,0 +1,14 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        double X = double.Parse(Console.ReadLine());
+        double Y = double.Parse(Console.ReadLine());
+        double m = X/Y;
+        Console.WriteLine($"{m:0.000} km/l");
+
+    }
+
+}
