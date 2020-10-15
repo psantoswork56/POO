@@ -1,0 +1,21 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string[] x = Console.ReadLine().Split(" ");
+        int a = int.Parse(x[0]);
+        int b = int.Parse(x[1]);
+        int c = int.Parse(x[2]);
+        int d = int.Parse(x[3]);
+        int e = int.Parse(x[4]);
+        if (e>d && d>c && c>b && b>a) Console.WriteLine("C");
+        else{
+            if (e<d && d<c && c<b && b<a) Console.WriteLine("D");
+            else Console.WriteLine("N");
+        }
+        
+    }
+
+}
