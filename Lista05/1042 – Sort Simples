@@ -1,0 +1,26 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        string[] x = Console.ReadLine().Split(" ");
+        int a = int.Parse(x[0]);
+        int b = int.Parse(x[1]);
+        int c = int.Parse(x[2]);
+        if (a>b && a>c){
+            if(b>c) Console.WriteLine($"{c}\n{b}\n{a}\n\n{a}\n{b}\n{c}");
+            else Console.WriteLine($"{c}\n{b}\n{a}\n\n{a}\n{b}\n{c}");
+        }
+        if (b>a && b>c){
+            if(a>c) Console.WriteLine($"{c}\n{a}\n{b}\n\n{a}\n{b}\n{c}");
+            else Console.WriteLine($"{a}\n{c}\n{b}\n\n{a}\n{b}\n{c}");
+        }
+        if (c>b && c>a){
+            if(a>b) Console.WriteLine($"{b}\n{a}\n{c}\n\n{a}\n{b}\n{c}");
+            else Console.WriteLine($"{a}\n{b}\n{c}\n\n{a}\n{b}\n{c}");
+        }
+        
+    }
+
+}
