@@ -1,1 +1,26 @@
 
+using System;
+
+class Disciplina{
+  public int n1, n2, n3, n4, pf;
+  public int MediaParcial(){
+    int mediap = ((2*(n1+n2))+(3*(n3+n4)))/10;
+    return mediap;
+  }
+  public int MediaFinal(){
+    int mediaf = ((((2*(n1+n2))+(3*(n3+n4)))/10)+pf)/2;
+    return mediaf;
+  }
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    Disciplina Poo = new Disciplina();
+    Poo.n1 = 70;
+    Poo.n2 = 40;
+    Poo.n3 = 30;
+    Poo.n4 = 80;
+    Poo.pf = 70;
+    Console.WriteLine (Poo.MediaParcial());
+  }
+}
