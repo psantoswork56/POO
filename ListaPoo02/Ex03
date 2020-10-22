@@ -1,1 +1,25 @@
 
+using System;
+
+class Viagem{
+  private double t, d;
+  public void SetTempo(double v){
+    if (v>0) t = v;
+  }
+  public void SetDistancia(double v){
+    if (v>0) d = v;
+  }
+  public double VMedia(){
+    double media = d/t;
+    return media;
+  }
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    Viagem x = new Viagem();
+    x.SetTempo(2);
+    x.SetDistancia(120);
+    Console.WriteLine (x.VMedia());
+  }
+}
