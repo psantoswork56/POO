@@ -1,1 +1,18 @@
+using System;
 
+class Viagem{
+  public double t, d;
+  public double VMedia(){
+    double media = d/t;
+    return media;
+  }
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    Viagem x = new Viagem();
+    x.t = 2;
+    x.d = 120;
+    Console.WriteLine (x.VMedia());
+  }
+}
