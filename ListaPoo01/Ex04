@@ -10,7 +10,7 @@ class Conta{
     return saldo-=s;
   }
   public string Dados(){
-    string r = "Conta:"+conta+"\n"+"Nome:"+nome+"\n"+"Saldo:"+Saldo();
+    string r = "Conta: "+conta+"\n"+"Nome: "+nome+"\n"+"Saldo: R$ "+$"{Saldo():0.00}";
     return r;
   }
   public double Saldo(){
