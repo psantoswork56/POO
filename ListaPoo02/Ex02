@@ -1,1 +1,40 @@
+using System;
 
+class Disciplina{
+  private int n1, n2, n3, n4, pf;
+  public void SetNota1(int v){
+    if (v>0) n1 = v;
+  }
+  public void SetNota2(int v){
+    if (v>0) n2 = v;
+  }
+  public void SetNota3(int v){
+    if (v>0) n3 = v;
+  }
+  public void SetNota4(int v){
+    if (v>0) n4 = v;
+  }
+  public void SetPf(int v){
+    if (v>0) pf = v;
+  }
+  public int MediaParcial(){
+    int mediap = ((2*(n1+n2))+(3*(n3+n4)))/10;
+    return mediap;
+  }
+  public int MediaFinal(){
+    int mediaf = ((MediaParcial())+pf)/2;
+    return mediaf;
+  }
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    Disciplina Poo = new Disciplina();
+    Poo.SetNota1(70);
+    Poo.SetNota2(40);
+    Poo.SetNota3(30);
+    Poo.SetNota4(80);
+    Poo.SetPf(80);
+    Console.WriteLine (Poo.MediaParcial());
+  }
+}
