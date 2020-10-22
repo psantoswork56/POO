@@ -1,4 +1,3 @@
-
 using System;
 
 class Disciplina{
@@ -8,7 +7,7 @@ class Disciplina{
     return mediap;
   }
   public int MediaFinal(){
-    int mediaf = ((((2*(n1+n2))+(3*(n3+n4)))/10)+pf)/2;
+    int mediaf = ((MediaParcial())+pf)/2;
     return mediaf;
   }
 }
@@ -20,7 +19,7 @@ class MainClass {
     Poo.n2 = 40;
     Poo.n3 = 30;
     Poo.n4 = 80;
-    Poo.pf = 70;
+    Poo.pf = 80;
     Console.WriteLine (Poo.MediaParcial());
   }
 }
