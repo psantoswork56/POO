@@ -1,1 +1,37 @@
 
+using System;
+
+class Ingresso{
+  public string d, t;
+  public int h;
+  public double Base(){
+    double x = 16.00;
+    double y = 8.00;
+    double z = 20.00;
+    if (d=="quarta") return y;
+    else{
+      if(d=="segunda"||d=="terca"||d=="quinta"){
+        if (h>=17) return x+=8;
+        else return x;
+      }
+      else {
+        if (h>=17) return z+=10;
+        else return z;
+      }
+    }
+  }
+  public double Preco(){
+    if (t=="meia") return Base()/2;
+    else return Base();
+  }
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    Ingresso x = new Ingresso();
+    x.d = "quinta";
+    x.t = "meia";
+    x.h = 18;
+    Console.WriteLine (x.Preco());
+  }
+}
