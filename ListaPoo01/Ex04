@@ -1,1 +1,32 @@
+using System;
 
+class Conta{
+  public string nome, conta;
+  public double saldo, d, s;
+  public double Deposito(){
+    return saldo +=d;
+  }
+  public double Saque(){
+    return saldo-=s;
+  }
+  public string Dados(){
+    string r = "Conta:"+conta+"\n"+"Nome:"+nome+"\n"+"Saldo:"+Saldo();
+    return r;
+  }
+  public double Saldo(){
+    saldo = Deposito()-Saque();
+    return saldo;
+  }
+}
+
+class MainClass {
+  public static void Main (string[] args) {
+    Conta x = new Conta();
+    x.nome = "Patrick";
+    x.conta = "12345";
+    x.saldo = 0;
+    x.d = 50;
+    x.s = 25;
+    Console.WriteLine (x.Dados());
+  }
+}
