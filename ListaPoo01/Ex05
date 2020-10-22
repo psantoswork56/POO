@@ -1,4 +1,3 @@
-
 using System;
 
 class Ingresso{
@@ -32,6 +31,6 @@ class MainClass {
     x.d = "quinta";
     x.t = "meia";
     x.h = 18;
-    Console.WriteLine (x.Preco());
+    Console.WriteLine ($"Ingresso custa: R$ {x.Preco():0.00}");
   }
 }
